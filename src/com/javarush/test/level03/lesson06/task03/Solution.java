@@ -8,19 +8,31 @@ package com.javarush.test.level03.lesson06.task03;
 Чтобы тесты проходили правильно, во всех задачах заменяй Ё на Е.
 */
 
-import java.lang.reflect.Array;
-
 public class Solution
 {
     public static void main(String[] args)
     {
         //Напишите тут ваш код
-        String[] colors = {"красный", "оранжевый", "желтый", "зеленый", "голубой", "синий", "фиолетовый"};
+        String[] colors = {"красный","оранжевый","желтый","зеленый","голубой","синий","фиолетовый"};
+        int cnt = 1;
         String str = "";
-        for (int i = 1; i <= 4; i++){
-            str = str + " " +  colors[i];
+        for (int i = 0; i < colors.length;i++){
+            if (cnt == 3){
+                cnt = 1;
+                System.out.println(str + colors[i]);
+                str = "";
+            }else
+            {
+                if (i == (colors.length - 1))
+                {
+                    str += colors[i];
+                    cnt++;
+                }else{
+                    str += colors[i] + " ";
+                    cnt++;
+                }
+            }
         }
-        System.out.print(str);
-
+        System.out.println(str);
     }
 }

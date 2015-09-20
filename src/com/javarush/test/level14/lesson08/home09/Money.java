@@ -2,15 +2,12 @@ package com.javarush.test.level14.lesson08.home09;
 
 public abstract class Money
 {
-    private double mount = 5.00;
-    public Money()
+    private double amount;
+    public Money(double amount)
     {
-        this.mount=getAmount();
     }
 
-    public double getAmount(){
-        return this.mount;
-    }
+    public abstract double getAmount();
 
     public abstract String getCurrencyName();
 }

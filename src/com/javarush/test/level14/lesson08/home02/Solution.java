@@ -11,7 +11,6 @@ package com.javarush.test.level14.lesson08.home02;
 
 public class Solution {
     public static void main(String[] args) {
-
         getDeliciousDrink().taste();
         System.out.println(getWine().getHolidayName());
         System.out.println(getBubblyWine().getHolidayName());

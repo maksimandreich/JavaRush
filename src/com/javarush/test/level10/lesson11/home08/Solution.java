@@ -18,15 +18,7 @@ public class Solution
     {
         //напишите тут ваш код
 
-
-        ArrayList<String>[] strListArray = new ArrayList[10];
-        for(int i=0;i<10;i++){
-            strListArray[i] = new ArrayList<String>();
-            for(int j=0;j<10;j++){
-                strListArray[i].add(i + " - " + j);
-            }
-        }
-        return strListArray;
+        return null;
     }
 
     public static void printList(ArrayList<String>[] arrayOfStringList)
